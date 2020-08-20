@@ -64,6 +64,25 @@ export default function Form(props) {
                 </label>
 
                 {/* ///// RADIO BUTTONS ///// */}
+                <label>Agree to Terms of Condition
+                    <input
+                        type='radio'
+                        name='terms'
+                        value='agree'
+                        checked={values.terms === 'agree'}
+                        onChange={onInputChange}
+                    />
+                </label>
+
+                <label>Disagree to Terms of Condition
+                    <input 
+                        type='radio'
+                        name='terms'
+                        value='disagree'
+                        checked={values.terms === 'disagree'}
+                        onChange={onInputChange}
+                    />
+                </label>
             </div>
         </form>
     )
