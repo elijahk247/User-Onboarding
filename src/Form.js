@@ -17,7 +17,7 @@ export default function Form(props) {
 
     return(
         <form className='form container' onSubmit={onSubmit}>
-            <div classNam='form-group submit'>
+            <div className='form-group submit'>
                 <h2>Onboard a new user</h2>
 
                 {/* button starts out disabled untill all parameters filled */}
