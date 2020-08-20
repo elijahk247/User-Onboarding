@@ -12,5 +12,7 @@ const formSchema = yup.object().shape({
     password: yup
         .string()
         .min(8, 'Password must be at least 8 characters long')
-        .matches[]
+        .matches(/[a-zA-Z]/, 'Password can only contain Latin Chars');
 })
+
+export default formSchema
